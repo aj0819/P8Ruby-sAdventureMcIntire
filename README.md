@@ -1,2 +1,2 @@
-# P8Ruby-sAdventureMcIntire
-Creating a repo for Ruby
+# P8RubysAdventureMcIntire
+Creating a repo for Ruby's Adventure
