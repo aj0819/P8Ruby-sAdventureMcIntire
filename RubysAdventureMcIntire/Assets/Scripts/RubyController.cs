@@ -6,6 +6,7 @@ public class RubyController : MonoBehaviour
 {
     public float speed = 3.0f;
     public int maxHealth = 5;
+    public int health { get { return currentHealth; } }
     int currentHealth;
 
     Rigidbody2D rigidbody2d;
@@ -15,8 +16,8 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-
         currentHealth = maxHealth;
+        
     }
 
     // Update is called once per frame
@@ -36,7 +37,7 @@ public class RubyController : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }
 
-    void ChangeHealth(int amount)
+    public void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
