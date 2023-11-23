@@ -148,7 +148,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -185,7 +185,7 @@ Animator:
   m_GameObject: {fileID: 5476585546412267139}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ad3dc16c0f3aaf468bcc46fe5330cda, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6fa961b0b8e539e479eb7a4ce884ad9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
