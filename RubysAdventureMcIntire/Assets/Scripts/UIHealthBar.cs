@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class NewBehaviourScript : MonoBehaviour
+using UnityEngine.UI;
+public class UIHealthBar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static UIHealthBar Instance { get; private set; }
+    public Image mask;
+    float originalSize;
+
+    void Awake()
     {
-        
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        originalSize = mask.rectTransform.rect.width;
+    }
+
+    public void SetValue(float value)
+    {
+        mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, originalSize * value);
     }
 }
